@@ -16,12 +16,28 @@ env/
 .env.*
 !.env.example
 
+# Local data (CLAUDE.md §18 rule 11)
+data/
+*.db
+
+# Terraform (CLAUDE.md §18 rule 11)
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+backend.hcl
+tfplan
+
 # Testing / type-check caches
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 .coverage
 htmlcov/
+
+# Frontend
+node_modules/
+.next/
 
 # Jupyter
 .ipynb_checkpoints/
